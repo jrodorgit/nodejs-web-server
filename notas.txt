@@ -14,7 +14,7 @@ crear arhcivo .gitignore en raiz y establecer ahi las carpetas a excluir.
 -- para añadir una carpeta
 git add src/
 
--- para añadir todo lo que tengo debajo
+-- para añadira staged area todo lo que tengo debajo
 git add .
 
 -- para hacer commit de los cambios
