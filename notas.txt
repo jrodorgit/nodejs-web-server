@@ -1,0 +1,10 @@
+C:\Java\nodejs_1015\node-v10.15.3-win-x64\node C:\Users\52535465S\Desktop\jrodor\nodejs\ejemplos\web-server\src\app.js
+
+-- project path
+cd /c/users/52535465S/Desktop/jrodor/nodejs/ejemplos/web-server
+
+-- inicializar proyecto a GIT
+git init ( situandonos en la carpeta raiz del proyecto )
+
+-- quitar carpetas que no se desean controlar
+crear arhcivo .gitignore en raiz y establecer ahi las carpetas a excluir.
