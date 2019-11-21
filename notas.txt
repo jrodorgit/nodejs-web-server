@@ -8,3 +8,16 @@ git init ( situandonos en la carpeta raiz del proyecto )
 
 -- quitar carpetas que no se desean controlar
 crear arhcivo .gitignore en raiz y establecer ahi las carpetas a excluir.
+
+-- para ver el estatus del proyectogit status
+
+-- para añadir una carpeta
+git add src/
+
+-- para añadir todo lo que tengo debajo
+git add .
+
+-- para hacer commit de los cambios
+git commit -m "Descripcion del commit"
+
+-- si cambio esto...
