@@ -20,4 +20,28 @@ git add .
 -- para hacer commit de los cambios
 git commit -m "Descripcion del commit"
 
--- si cambio esto...
+-- si cambio esto.
+
+-- ver si tenemos clave publica y privada para trabajar en modo seguro... todo esto en GIT Bash
+ls -a -l ~/.ssh
+
+
+-- generar clave publica y privada
+
+$ ssh-keygen -t rsa -b 4096 -C "jrodor@gmail.com"
+
+-- arrancar el agente ssh
+ eval $(ssh-agent -s)
+
+-- anadir las claves al agente.
+$  ssh-add ~/.ssh/id_rsa
+
+-- crear repositov en github
+como siempre
+
+-- decirle a git donde esta el repositorio remoto con el que vamos a trabajar
+$ git remote add origin https://github.com/jrodorgit/nodejs-web-server.git
+
+
+-- añadir la clave publica a git hub para poder empezar a trabajar con ellos
+en el apartado de preferencias ssh
