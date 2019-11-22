@@ -45,3 +45,9 @@ $ git remote add origin https://github.com/jrodorgit/nodejs-web-server.git
 
 -- añadir la clave publica a git hub para poder empezar a trabajar con ellos
 en el apartado de preferencias ssh
+
+-- testear la comunicacion ssh
+ssh -T git@github.com
+
+-- commit del proyecto en github
+git push -u origin master
