@@ -52,4 +52,10 @@ ssh -T git@github.com
 -- commit del proyecto en github
 git push -u origin master
 
+-- creacion en heroku de la app
+jrodor-hello-web-server en europa.
+
+-- deploy de la app en heroku
+https://jrodor-hello-web-server.herokuapp.com/
+
 -- fin del archivo
