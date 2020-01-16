@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
+const menuRouter = require('./routers/router.js')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -13,25 +14,9 @@ hbs.registerPartials(path.join(__dirname, '../templates/partials'))
 // static directory path
 app.use(express.static(path.join(__dirname, '../public')))
 
-app.get('' , (req,res) => {
-    res.render('index',{title: 'Home Sweet Home!'})
-})
+// routers
+app.use(menuRouter)
 
-
-app.get('/about' , (req,res) => {
-
-    if(!req.query.key){
-        return res.send({
-            error: 'No has introducido ninguna key'
-        })
-    }
-    console.log(req.query.key)
-    res.render('about',{title: 'About Me and '+ req.query.key})
-})
-
-app.get('/help' , (req,res) => {
-    res.send({name: 'jose', age: 34})
-})
 
 // sin o existe la ruta
 app.get('*' , (req,res) => {
